@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+		<title>Welcome - Radio Mesh</title>
+		
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+		
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<nav role="navigation" class="navbar navbar-default">
+						<div class="navbar-header">
+							<a href="index.html" class="navbar-brand">
+								<div class="team-member pull-left">
+									<img class="img img-responsive" src="static/img/radio.png" alt="Radio">
+								</div>
+								<span>Radio Mesh</span>
+							</a>
+						</div>
+						<div id="navbarCollapse" class="collapse navbar-collapse">
+							<ul class="nav navbar-nav navbar-right">
+								
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<br/>
+			<div class="team-title">	
+        		<h2 class="text-center">Welcome to Radio Mesh</h2>
+        	</div>
+        	<br/>
+			<h4 class="text-center">Browse through the scores of Radio broadcasts through the Mesh Network</h4>        		
+        	<hr/>
+            <div class="row">
+                <div class="col-sm-6">
+                	<h4 class="text-center"><u>Available Categories</u></h4>
+                	<br/>
+					<table class="table table-responsive table-condensed table-striped table-hover table-bordered">
+						<thead>
+							<th>No.</th>
+							<th>Station Name</th>
+							<th>Category</th>
+							<th>Listen</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Music24By7</td>
+								<td>Music</td>
+								<td><a href="http://192.168.2.7:8000/mixx_stream">Listen</a></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Tap2Talk</td>
+								<td>Radio Broadcast</td>
+								<td><a href="http://192.168.2.7:8000/mixx_stream">Listen</a></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>MozartMagic</td>
+								<td>Music, BGM</td>
+								<td><a href="http://192.168.2.7:8000/mixx_stream">Listen</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-sm-6">
+					<h4 class="text-center"><u>Listen Here</u></h4>
+					<br/>
+					<div class="juke-box">
+						<p class="text-center">Now Playing</p>
+						<br/>
+						<audio controls preload=none>
+						  	<source src="http://192.168.2.7:8000/mixx_stream" type="audio/mpeg">
+						</audio>
+					</div>
+				</div>
+            </div>
+		</div>
+		<!-- container -->
+		<script src="static/js/jquery-1.11.3.js"></script>
+		<script src="static/js/bootstrap.min.js"></script>
+		<script src="static/js/app.js"></script>	
+	</body>
+</html>
